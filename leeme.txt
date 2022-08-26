@@ -1,0 +1,58 @@
+Proyecto Ciclo 2 - Algoritmos
+Algoritmos
+Universidad Mariano Galvez de Jalapa
+Ing. Bayron Carranza
+Sección A
+Requerimientos
+De los enunciados que se darán a continuación se requiere lo siguiente:.
+1. Elaborar un Informe en pdf con el siguiente formato.
+a. Carátula
+b. Índice
+c. Introducción
+d. Marco Teórico
+e. Algoritmo
+f. Diagrama de flujo
+g. Pseint
+h. C#
+i. Conclusiones
+j. Recomendaciones
+k. E-grafía
+2. Diagrama de flujo en draw.io
+3. Pseudocodigo en pseint
+4. Código en C#
+5. Presentación de venta: Elaborar una presentación resumida con los aspectos más
+importantes del informe, tienen que simular que está vendiendo el producto a su
+catedrático y a sus compañeros, resaltar el porqué su producto es mejor que el
+resto.
+6. Sea creativo
+7. Utilice todos los conceptos posibles vistos en clase, entre más conceptos uses mejor
+será el punteo.
+8. Son 5 grupos y usted competirá contra otros grupos.
+9. Su catedrático decidirá el ganador de su categoría.
+a. El primer lugar tendrá un total de 15 puntos
+b. El segundo lugar tendrá un total de 12 Puntos
+c. El tercer lugar tendrá un total de 10 puntos.
+Otros Aspectos
+- Valor 15 puntos
+- Fecha tentativa de presentación: 29 de octubre 2022
+- Tiempo: 20 minutos por grupo
+- Los enunciados serán sorteados.
+- Se necesita que el código esté en github.
+Enunciados
+#1 Sistema de Votación:
+Supóngase que fue contratado para realizar el sistema de las Elecciones Generales
+Presidenciales de Guatemala 2023, el sistema tiene que ser capaz de pre-cargar los
+candidatos y el partido al que pertenecen (esto se hará en un módulo llamado: Carga de
+candidatos) cada candidato tendrá un identificador numérico como 1, 2, 3 .. N,
+posteriormente existirá un módulo llamado Carga de Votos , el usuario registrará los votos
+de manera desorganizada, tal y como se obtuvieron la elección, el final de datos está
+representado por un 0. Observe, como ejemplo, la siguiente lista.
+El 0 significa que finaliza el ingreso de los datos.
+1 3 1 4 2 2 1 4 1 1 1 2 1 3 1 4 1 2 4 5 2 1 4 5 4 2 3 0
+Al final mostrará al usuario la lista ordenada con la posición de cada candidato.
+Posición Candidato Porcentaje
+1 Candidato 3 54%
+2 Candidato 2 20%
+3 Candidato 1 10%
+4 Candidato 4 9%
+5 Candidato 5 7%
