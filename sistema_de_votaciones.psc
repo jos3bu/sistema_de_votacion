@@ -30,10 +30,10 @@ Algoritmo sistema_de_votaciones
 			SiNo
 				Limpiar Pantalla
 				Escribir "*** Seleccione un candidato ***"
-				Escribir "1. maria"
-				Escribir "2. pablo"
-				Escribir "3. luisa"
-				Escribir "Ingresa el numero de tu candidato"
+				Escribir "1. Juan Carlos Merida"
+				Escribir "2. Jose Leonel Perez"
+				Escribir "3. Maria Eugenia Alarcon"
+				Escribir "Ingresa el numero correspondiente al candidato"
 				leer voto
 				segun voto Hacer
 					1:
@@ -50,33 +50,33 @@ Algoritmo sistema_de_votaciones
 		SiNo
 			Escribir "*** Resultados de las elecciones***"
 			si (vc1>vc2 y vc1>vc3) Entonces
-				Escribir "El ganador es maria con: ",vc1," votos"
+				Escribir "El ganador es Juan Carlos Merida: ",vc1," votos"
 				si (vc2>vc3) Entonces
-					Escribir "Pablo tiene: ",vc2," votos"
-					Escribir "Luisa tiene: ",vc3," votos"
+					Escribir "Jose Leonel Perez tiene: ",vc2," votos"
+					Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos"
 				SiNo
-					Escribir "luisa tiene: ", vc3, " votos"
-					Escribir "pablo tiene: ", vc2, " votos"
+					Escribir "Maria Eugenia Alarcon tiene: ", vc3, " votos"
+					Escribir "Jose Leonel Perez tiene: ", vc2, " votos"
 				FinSi
 			SiNo
 				si (vc2>vc1 y vc2>vc3) Entonces
-					Escribir "El ganador es pablo con: ",vc2," votos"
+					Escribir "El ganador es Jose Leonel Perez con: ",vc2," votos"
 					si (vc1>vc3) Entonces
-						Escribir "Maria tiene: ",vc1," votos"
-						Escribir "Luisa tiene: ",vc3," votos"
+						Escribir "Juan Carlos Merida tiene: ",vc1," votos"
+						Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos"
 					SiNo
-						Escribir "Luisa tiene: ",vc3," votos"
-						Escribir "Maria tiene: ",vc1," votos"
+						Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos"
+						Escribir "Juan Carlos Merida tiene: ",vc1," votos"
 					FinSi
 				SiNo
 					si (vc3>vc1 y vc3>vc2) Entonces
-						Escribir "El ganador fue Luisa con: ",vc3," votos"
+						Escribir "El ganador fue Maria Eugenia Alarcon con: ",vc3," votos"
 						si (vc2>vc1) Entonces
-							Escribir "Pablo tiene: ",vc2," votos"
-							Escribir "Maria tiene: ",vc1," votos"
+							Escribir "Jose Leonel Perez tiene: ",vc2," votos"
+							Escribir "Juan Carlos Merida tiene: ",vc1," votos"
 						SiNo
-							Escribir "Maria tiene: ",vc1," votos"
-							Escribir "Pablo tiene: ",vc2," votos"
+							Escribir "Juan Carlos Merida tiene: ",vc1," votos"
+							Escribir "Jose Leonel Perez tiene: ",vc2," votos"
 						FinSi
 					SiNo
 						Escribir "Existe un empate entre candidatos, se deben repetir las elecciones"
