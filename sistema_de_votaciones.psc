@@ -47,45 +47,50 @@ Algoritmo sistema_de_votaciones
 				FinSegun
 				
 			FinSi
+			//Stiven Del Cid añade sistema de porcentajes
+				CV = vc1 + vc2 + vc3
+				Porcentaje1 = (Vc1 / CV) * 100
+				Porcentaje2 = (Vc2 / CV) * 100
+				Porcentaje3 = (Vc3 / CV) * 100
 		SiNo
-			Escribir "*** Resultados de las elecciones***"
-			si (vc1>vc2 y vc1>vc3) Entonces
-				Escribir "El ganador es Juan Carlos Merida: ",vc1," votos"
-				si (vc2>vc3) Entonces
-					Escribir "Jose Leonel Perez tiene: ",vc2," votos"
-					Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos"
-				SiNo
-					Escribir "Maria Eugenia Alarcon tiene: ", vc3, " votos"
-					Escribir "Jose Leonel Perez tiene: ", vc2, " votos"
-				FinSi
-			SiNo
-				si (vc2>vc1 y vc2>vc3) Entonces
-					Escribir "El ganador es Jose Leonel Perez con: ",vc2," votos"
-					si (vc1>vc3) Entonces
-						Escribir "Juan Carlos Merida tiene: ",vc1," votos"
-						Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos"
+				Escribir "*** Resultados de las elecciones***"
+				si (vc1>vc2 y vc1>vc3) Entonces
+					Escribir "El ganador es Juan Carlos Merida: ",vc1," votos" " con el " ,porcentaje1 "%"
+					si (vc2>vc3) Entonces
+						Escribir "Jose Leonel Perez tiene: ",vc2," votos" " con el: " ,porcentaje2 "%"
+						Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos" " con el:  " ,porcentaje3 "%"
 					SiNo
-						Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos"
-						Escribir "Juan Carlos Merida tiene: ",vc1," votos"
+						Escribir "Maria Eugenia Alarcon tiene: ", vc3, " votos" " con el: " ,porcentaje3 "%"
+						Escribir "Jose Leonel Perez tiene: ", vc2, " votos" " con el:  " ,porcentaje2 "%"
 					FinSi
 				SiNo
-					si (vc3>vc1 y vc3>vc2) Entonces
-						Escribir "El ganador fue Maria Eugenia Alarcon con: ",vc3," votos"
-						si (vc2>vc1) Entonces
-							Escribir "Jose Leonel Perez tiene: ",vc2," votos"
-							Escribir "Juan Carlos Merida tiene: ",vc1," votos"
+					si (vc2>vc1 y vc2>vc3) Entonces
+						Escribir "El ganador es Jose Leonel Perez con: ",vc2," votos" " con el:  " ,porcentaje2 "%"
+						si (vc1>vc3) Entonces
+							Escribir "Juan Carlos Merida tiene: ",vc1," votos" " con el:  " ,porcentaje1 "%"
+							Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos" " con el:  " ,porcentaje3 "%"
 						SiNo
-							Escribir "Juan Carlos Merida tiene: ",vc1," votos"
-							Escribir "Jose Leonel Perez tiene: ",vc2," votos"
+							Escribir "Maria Eugenia Alarcon tiene: ",vc3," votos" " con el:  " ,porcentaje3 "%"
+							Escribir "Juan Carlos Merida tiene: ",vc1," votos" " con el:  " ,porcentaje1 "%"
 						FinSi
 					SiNo
-						Escribir "Existe un empate entre candidatos, se deben repetir las elecciones"
+						si (vc3>vc1 y vc3>vc2) Entonces
+							Escribir "El ganador fue Maria Eugenia Alarcon con: ",vc3," votos" " con el:  " ,porcentaje3 "%"
+							si (vc2>vc1) Entonces
+								Escribir "Jose Leonel Perez tiene: ",vc2," votos" " con el:  " ,porcentaje2 "%"
+								Escribir "Juan Carlos Merida tiene: ",vc1," votos" " con el:  " ,porcentaje1 "%"
+							SiNo
+								Escribir "Juan Carlos Merida tiene: ",vc1," votos" " con el:  " ,porcentaje1 "%"
+								Escribir "Jose Leonel Perez tiene: ",vc2," votos" " con el:  " ,porcentaje2 "%"
+							FinSi
+						SiNo
+							Escribir "Existe un empate entre candidatos, se deben repetir las elecciones"
+						FinSi
 					FinSi
 				FinSi
+				Escribir "votos no validos: ",vn
+				if<-1
 			FinSi
-			Escribir "votos no validos: ",vn
-			if<-1
-		FinSi
-	FinMientras
-	
+		FinMientras
+		
 FinAlgoritmo
